@@ -1,0 +1,117 @@
+# Cybersecurity Chatbot - POE_GUI
+
+## Overview1
+
+This application is a Windows desktop chatbot designed to educate users about cybersecurity topics. It features a graphical user interface with multiple panels for different functionalities, including:
+
+- Cybersecurity information (passwords, scams, privacy)
+- Task management
+- Interactive quiz
+- Mood tracking
+- Conversation history
+
+## Features
+
+### Main Functionalities
+
+1. **Cybersecurity Information**:
+   - Provides expert advice on passwords, scams, and privacy
+   - Contextual responses based on user interests
+   - Follow-up questions for deeper exploration
+
+2. **Task Management**:
+   - Add tasks with titles, descriptions, and reminders
+   - View, complete, and delete tasks
+   - Reminder system with date parsing
+
+3. **Interactive Quiz**:
+   - 10 cybersecurity questions with multiple-choice answers
+   - Immediate feedback and explanations
+   - Score tracking
+
+4. **User Experience**:
+   - Mood tracking based on input analysis
+   - Personalized greetings
+   - Conversation history
+   - Activity log
+
+### Technical Components
+
+- WPF-based GUI with multiple panels
+- Object-oriented design with separate classes for:
+  - Chatbot logic (`ChatBot_AI`)
+  - Task management (`TaskItem`)
+  - Quiz system (`QuizQuestion`)
+- Audio greeting on startup
+- Error handling for file operations
+
+## Installation
+
+1. **Prerequisites**:
+   - .NET Framework 4.7.2 or later
+   - Windows OS
+
+2. **Setup**:
+   - Clone or download the repository
+   - Build the solution in Visual Studio
+   - Ensure `greeting.wav` and `chatbot_image.jpeg` are in the executable directory (optional)
+
+## Usage
+
+1. **Initial Setup**:
+   - Enter your name and optional interest when prompted
+   - The main menu will appear after submission
+
+2. **Main Menu Options**:
+   - **Ask Questions**: Chat about cybersecurity topics
+   - **Task Assistant**: Manage your cybersecurity tasks
+   - **Cybersecurity Quiz**: Test your knowledge
+   - **Check Mood**: View your current mood score
+   - **View Memory**: See what the bot remembers
+   - **View History**: Review conversation history
+   - **Activity Log**: See recent actions
+
+3. **Chat Interface**:
+   - Type questions about passwords, scams, or privacy
+   - Use natural language for task management (e.g., "add task")
+   - Type "back" to return to the main menu
+
+4. **Task Management**:
+   - Add tasks with optional reminders (e.g., "in 7 days" or specific date)
+   - View tasks and mark them as complete
+   - Delete tasks when no longer needed
+
+5. **Quiz**:
+   - Answer multiple-choice questions
+   - Receive immediate feedback and explanations
+   - Get your score at the end
+
+## Code Structure
+
+- `MainWindow.xaml.cs`: Main application window with event handlers
+- `ChatBot_AI.cs`: Core chatbot logic and intelligence
+- `TaskItem.cs`: Task management data structure
+- `QuizQuestion.cs`: Quiz question data structure
+
+## Customization
+
+To modify the application:
+
+1. **Responses**: Edit the `InitializeResponses()` method in `ChatBot_AI.cs` to change cybersecurity information
+2. **Quiz Questions**: Modify the `InitializeQuizQuestions()` method to add/change questions
+3. **UI**: Adjust the XAML files for visual changes
+4. **Audio**: Replace `greeting.wav` with a custom audio file
+
+## Troubleshooting
+
+- If the logo doesn't appear, ensure `chatbot_image.jpeg` exists in the executable directory
+- Audio issues may occur if `greeting.wav` is missing or corrupted
+- For other errors, check the conversation log in the application
+
+## License
+
+This project is open-source and available for educational purposes. Modify and use as needed.
+
+---
+
+This README provides comprehensive information about the Cybersecurity Chatbot application. For additional questions, please refer to the code comments or contact the developer.
